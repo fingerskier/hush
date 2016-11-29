@@ -3,8 +3,8 @@ var midi = require('midi')
 var output = new midi.output()
 
 var numPorts = output.getPortCount()
+var portName = output.getPortName(0)
 
-var portName = output.getPortName()
 
 output.openPort(0)
 
